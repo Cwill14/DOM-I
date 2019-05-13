@@ -84,5 +84,15 @@ contactP[2].textContent = siteContent.contact["email"];
 
 document.querySelector('footer p').textContent = siteContent.footer["copyright"];
 
+let navThing = document.querySelector('header nav');
+let appAnchor = document.createElement('a');
+appAnchor.textContent = "FAQ";
+appAnchor.style.color = "green";
+appAnchor.setAttribute("href", "#");
+navThing.appendChild(appAnchor);
 
-
+let preAnchor = document.createElement('a');
+preAnchor.textContent = "Home";
+preAnchor.style.color = "green";
+preAnchor.setAttribute("href", "#");
+navThing.prepend(preAnchor);
