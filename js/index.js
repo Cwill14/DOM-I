@@ -57,7 +57,7 @@ navItems.forEach((item, index) => {
 
 
 let h1Text = document.querySelector('h1');
-h1Text.textContent = siteContent.cta["h1"];
+h1Text.innerHTML = "DOM <br> Is <br> Awesome";
 
 let btnTxt = document.querySelector('button');
 btnTxt.textContent = siteContent.cta["button"];
@@ -78,7 +78,7 @@ mainP[4].textContent = siteContent["main-content"]["vision-content"];
 
 document.querySelector(".contact h4").textContent = siteContent.contact["contact-h4"];
 let contactP = document.querySelectorAll('.contact p');
-contactP[0].textContent = siteContent.contact["address"];
+contactP[0].innerHTML = "123 Way 456 Street <br>Somewhere, USA";
 contactP[1].textContent = siteContent.contact["phone"];
 contactP[2].textContent = siteContent.contact["email"];
 
